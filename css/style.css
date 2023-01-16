@@ -17,6 +17,7 @@ body {
 }
 
 /*header*/
+
 .header {
   min-width: 1220px;
   background-color: #000000;
@@ -39,7 +40,7 @@ body {
   margin-right: auto; 
 }
 
-.container:after {
+.header:after {
   content: "";
   position: absolute;
   top: 0;
@@ -117,27 +118,6 @@ body {
 
 /*trends*/
 
-.trends__title {
-  display: flex;
-  justify-content: center;
-  font-family: OpenSans-Bold, sans-serif;
-  font-size: 14px;
-  text-transform: uppercase;
-  position: relative;
-  padding: 0;
-  margin: 60px 0 0 0;
-}
-
-.trends__title:after {
-  content:"";
-  width: 66px;
-  height: 3px;
-  background-color: #b59f5b;
-  opacity: 40%;
-  position: absolute;
-  top: 100%;
-  margin-top: 10px;
-}
 
 .trends__section {
   box-sizing: border-box;
@@ -148,13 +128,38 @@ body {
   margin-right: auto; 
 }
 
+.trends__title {
+  display: flex;
+  justify-content: center;
+  font-family: OpenSans-Bold, sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  position: relative;
+  padding: 0;
+  margin: 33px 0 0 0;
+}
+
+.trends__title:after {
+  content:"";
+  width: 66px;
+  height: 3px;
+  background-color: #b59f5b;
+  opacity: 40%;
+  position: absolute;
+  top: 100%;
+  margin-top: 5px;
+}
+
 .trends__container {
   display: flex;
   flex-wrap: no-wrap;
 }
 
+.trends__container {
+  margin-top: 35px;
+}
+
 .trend {
-/*  background-image: url("images/trend1.jpg");*/
   width: 25%;
   min-height: 320px;
   display: flex;
@@ -214,7 +219,7 @@ body {
 
 .trend__content {
   border: 3px solid rgba(181, 159, 91);
-  padding: 15px;
+  padding: 33px;
   align-items: flex-end;
   margin-bottom: 15px;
   margin-left: 20px;
@@ -248,21 +253,6 @@ body {
 }
 */
 
-
-
-
-/*trends*/
-
-/*shop*/
-
-
-
-
-
-
-
-
-/*shop*/
 
 
 .main-page-content {
@@ -600,7 +590,7 @@ h2 {
   justify-content: center;
   align-items: center;
   list-style-type: none;
-  padding: 30px 0px 30px;
+  padding: 35px 0px 30px;
 }
 
 .social-icon-list {
@@ -655,6 +645,40 @@ h2 {
 
 /*SHOP*/
 
+.shop__container {
+  box-sizing: border-box;
+  width: 1200px;
+  padding: 0px 15px 0px 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.shop__title {
+  display: flex;
+  justify-content: center;
+  font-family: OpenSans-Bold, sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  position: relative;
+  padding: 0;
+  margin: 10px 0px 45px 0px;
+}
+
+.shop__title:after {
+  content:"";
+  width: 66px;
+  height: 3px;
+  background-color: #b59f5b;
+  opacity: 40%;
+  position: absolute;
+  top: 100%;
+  margin-top: 5px;
+}
+
+.shop__block {
+  margin-top: 20px;
+}
+
 .shop__block {
   display: flex;
   justify-content: space-between;
@@ -694,22 +718,21 @@ h2 {
 }
 
 .card__title {
-  font-family: "OpenSans-Bold", sans-serif;
-  font-weight: bold;
+  font-family: OpenSans-Bold, sans-serif;
   font-size: 20px;
   text-transform: uppercase;
-  margin-top: 35px;
+  margin: 30px 0px 0px 0px;
 }
 
 .card__text {
-  font-family: "OpenSans-Regular", sans-serif;
-  font-weight: 400;
+  font-family: OpenSans-Regular, sans-serif;
   font-size: 15px;
-  margin-top: 17px;
+  margin-top: 5px;
 }
 
 .card__text__link {
   color: #b59f5b;
+  text-decoration: none;
 }
 
 .card__text__link:hover {
@@ -728,30 +751,31 @@ h2 {
   border: 1px solid #b59f5b;
   cursor: pointer;
   width: 140px;
-  height: 47px;
+  height: 49px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: "OpenSans-Bold", sans-serif;
-  font-weight: bold;
+  font-family: OpenSans-Bold, sans-serif;
   font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
 }
 
 .card__button:hover {
-  background-color: #0f0d0e;
+  background-color: #323232;
 }
 
 .sum__text {
   text-decoration: line-through;
-  font-family: "OpenSans-Bold", sans-serif;
-  font-weight: bold;
+  font-family: OpenSans-Bold, sans-serif;
   font-size: 14px;
+  margin: 0;
 }
 
 .sum__text__fin {
-  font-family: "OpenSans-Bold", sans-serif;
-  font-weight: bold;
+  font-family: OpenSans-Bold, sans-serif;
   font-size: 20px;
+  margin: 0;
 }
 
 .fin__one {
@@ -781,8 +805,7 @@ h2 {
 
 .sign__text {
   text-align: center;
-  font-family: "OpenSans-Bold", sans-serif;
-  font-weight: bold;
+  font-family: OpenSans-Bold, sans-serif;
   font-size: 12px;
 }
 /*SHOP */
@@ -862,8 +885,7 @@ h2 {
 
 .form__box {
   margin-top: 30px;
-  font-family: "OpenSans-Regular", sans-serif;
-  font-weight: 400;
+  font-family: OpenSans-Regular, sans-serif;
   font-size: 13px;
 }
 
@@ -875,6 +897,9 @@ h2 {
 .frequency_text {
   margin-bottom: 24px;
 }
+
+
+/*НЕПОНЯТНО!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
 .frequency__field {
 /*  appearance: none;*/
@@ -913,7 +938,7 @@ h2 {
   display: inline-block;
   width: 18px;
   height: 18px;
-  background-image: url(../img/form-empty-circle.svg);
+  background-image: url("/Users/tatianagortanova/Desktop/Diploma Module 2/SVG/form-empty-circle.svg");
   background-repeat: no-repeat;
   background-size: 18px;
   background-position: left;
@@ -922,7 +947,7 @@ h2 {
 }
 
 .button__choice_dots:checked + .radio_button_text:before {
-  background-image: url(../img/form-circle.svg);
+  background-image: url("/Users/tatianagortanova/Desktop/Diploma Module 2/SVG/form-circle.svg");
 }
 
 .form__area {
@@ -962,3 +987,7 @@ h2 {
   padding: 20px auto;
   cursor: pointer;
 }
+
+
+
+
